@@ -1,4 +1,4 @@
-# Miguel Ángel Medina Lazcano · Engineering portfolio (Tesla)
+# Miguel Ángel Medina Lazcano · Engineering portfolio
 
 Static site (one `index.html` + `img/`), served with GitHub Pages.
 

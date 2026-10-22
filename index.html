@@ -52,6 +52,7 @@ nav.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:
 .hero h1{font-size:clamp(40px,6.1vw,92px);font-weight:850;font-variation-settings:"wdth" 118;letter-spacing:-.025em;line-height:.92;margin-top:18px}
 .hero h1 em{font-style:normal;color:var(--red)}
 .hero .who{margin-top:28px;display:grid;gap:14px}
+.hero .name{font-family:var(--display);font-weight:700;font-size:clamp(20px,2vw,26px);font-variation-settings:"wdth" 100}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-family:var(--mono);font-size:12px;border:1px solid var(--line);padding:5px 10px;border-radius:999px;color:var(--ink-2);background:var(--bg)}
 .chip.hot{border-color:var(--red);color:var(--red-ink);background:var(--red-wash)}
@@ -227,18 +228,13 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
 .contact h2{font-size:clamp(40px,6.4vw,96px);font-weight:860;font-variation-settings:"wdth" 118;letter-spacing:-.02em}
 .contact h2 em{font-style:normal;color:var(--red)}
 .contact .lede{color:#C9CDD1;margin-top:18px}
-.logi{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(36px,5vw,56px);border-top:1px solid #2C2D30}
-.logi div{padding:18px 18px 18px 0;border-bottom:1px solid #2C2D30}
-.logi .k,.c-grid .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#A6A8AB}
-.logi .v{margin-top:6px;font-size:17px;font-weight:500}
-.logi .s{font-size:13.5px;color:#A6A8AB;margin-top:2px}
+.c-grid .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#A6A8AB}
 .c-grid{display:grid;grid-template-columns:1.35fr .9fr 1.35fr .8fr;margin-top:clamp(36px,5vw,56px);border-top:1px solid #2C2D30}
 .c-grid div{padding:18px 18px 0 0}
 .c-grid .v{margin-top:6px;font-size:16px;word-break:break-word}
 .c-grid a{color:#fff;text-decoration-color:var(--red);text-underline-offset:4px}
 .copy{all:unset;cursor:pointer;margin-top:10px;font-family:var(--mono);font-size:11.5px;border:1px solid #5A6066;padding:5px 10px;border-radius:2px;display:inline-block}
 .copy:focus-visible{outline:2px solid var(--red)}
-.footer-note{margin-top:48px;font-family:var(--mono);font-size:11px;color:#8E9094;max-width:90ch;line-height:1.6}
 
 /* responsive */
 @media screen and (max-width:1100px){
@@ -256,7 +252,6 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
   .stat:nth-child(3){padding-left:0}
   .skills{grid-template-columns:1fr 1fr}
   .c-grid{grid-template-columns:1fr 1fr}
-  .logi{grid-template-columns:1fr 1fr}
   .edu{grid-template-columns:1fr}
   .sketch-grid{grid-template-columns:1fr 1fr}
 }
@@ -279,7 +274,7 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
   .gal .tfull .h{aspect-ratio:4/3}
 }
 @media screen and (max-width:600px){
-  .dtypes,.skills,.logi{grid-template-columns:1fr}
+  .dtypes,.skills{grid-template-columns:1fr}
   .dtypes article,.dtypes article+article{padding-left:0;border-right:0}
   .vs{grid-template-columns:1fr}
   .vs div+div{border-left:0;border-top:1px solid var(--line)}
@@ -341,15 +336,16 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow">Engineering portfolio · Mechanical Design Engineering Intern · Berlin</p>
+        <p class="eyebrow">Motorsport engineering portfolio</p>
         <h1>Miguel Ángel<br><em>Medina Lazcano</em></h1>
         <div class="who">
-          <p class="lede">Mechanical engineer, MSc at ICAI in Madrid. I spent four seasons designing, building and racing electric Formula Student cars, going from chassis member to Mechanical Technical Director. I now work as a Junior CAE Engineer on carbon-fibre structures.</p>
+          <p class="name">Passion. Resilience. For every iteration.</p>
+          <p class="lede">Four seasons building racing cars with ISC FS Racing Team, from chassis engineer to Managing Director and then Mechanical Technical Director of the IFS-08. MSc Industrial Engineering (Mechanical) at ICAI, Madrid, and Junior CAE Engineer at Managing Composites.</p>
           <div class="chips">
-            <span class="chip hot">Berlin · on site · from 16 Jan 2027</span>
-            <span class="chip">6 months · full time</span>
-            <span class="chip">EU citizen</span>
-            <span class="chip">English C1</span>
+            <span class="chip hot">Available January 2027</span>
+            <span class="chip">Willing to relocate</span>
+            <span class="chip">Formula Student · 4 seasons</span>
+            <span class="chip">Concept · chassis · composites</span>
           </div>
         </div>
       </div>
@@ -362,7 +358,7 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
     <div class="stats" aria-label="Headline numbers">
       <div class="stat"><div class="n mono">4</div><p class="l">Cars in four seasons, IFS-05 to IFS-08, from chassis member to Technical Director</p></div>
       <div class="stat"><div class="n mono">−40<small>kg</small></div><p class="l">Vehicle mass saved by a two-year clean-sheet concept change</p></div>
-      <div class="stat"><div class="n mono">3,600<small>Nm/deg</small></div><p class="l">Torsional stiffness of the IFS-08 frame at 36 kg (simulated)</p></div>
+      <div class="stat"><div class="n mono">80+</div><p class="l">Team members led as Managing Director, across 2 electric prototypes and 4 competitions</p></div>
       <div class="stat"><div class="n mono">−65<small>%</small></div><p class="l">Monocoque mass against the initial laminate in my BSc thesis, graded 10/10</p></div>
     </div>
   </div>
@@ -752,34 +748,25 @@ section.block{padding-block:clamp(64px,9vw,128px);border-top:1px solid var(--lin
     <div class="letter">
       <p class="eyebrow">In short</p>
       <blockquote>
-        <p>I have taken parts from a sketch to CAD, to drawings for suppliers, to the workshop and onto the track, and I have had to explain every number to design judges along the way. That is the habit I would bring to Berlin: every dimension has a reason, and every reason has a number.</p>
-        <p>I still have a lot to learn. CATIA and GD&amp;T at production level are the two skills I most want to build, and I learn fastest next to the people building the product.</p>
+        <p>Four seasons of Formula Student taught me to think about the whole car, not just one part. I led the design of the IFS-08 across chassis, suspension, aerodynamics, powertrain and HV/LV integration, and framed a two-year concept change that took 40 kg out of the car. For my BSc thesis I designed a CFRP monocoque and checked it against every rule load case. At Managing Composites I test structural carbon fibre parts, calibrate material cards, automate simulations, organise project folders and create tools that integrate AI.</p>
+        <p>Formula Student taught me how much work sits behind a design freeze, and how easily it can slip. Helping more than 80 people get there showed me the value of planning, communication and listening. I still have a lot to learn, and I would like to bring that experience to your team while learning from the engineers around me.</p>
       </blockquote>
     </div>
   </div>
 </section>
 
-<!-- 08 · CONTACT + LOGISTICS -->
+<!-- 08 · CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <p class="eyebrow" style="color:#A6A8AB">08 · Logistics and contact</p>
-    <h2 style="margin-top:14px">Ready for Berlin on<br><em>16 January 2027.</em></h2>
-    <p class="lede">Six months, full time and on site. I will relocate to Berlin.</p>
-    <div class="logi">
-      <div><p class="k">Start</p><p class="v">16 January 2027</p></div>
-      <div><p class="k">Duration</p><p class="v">6 months, full time</p><p class="s">40 hours a week, on site</p></div>
-      <div><p class="k">Location</p><p class="v">Berlin office</p><p class="s">Relocating from Madrid</p></div>
-      <div><p class="k">Right to work</p><p class="v">EU citizen</p><p class="s">No permit needed in Germany</p></div>
-      <div><p class="k">English</p><p class="v">C1 · Cambridge Advanced</p></div>
-      <div><p class="k">University</p><p class="v">No report required</p><p class="s">No courses or seminars during the internship</p></div>
-    </div>
+    <p class="eyebrow" style="color:#A6A8AB">08 · Contact</p>
+    <h2 style="margin-top:14px">Ready from<br><em>January 2027.</em></h2>
+    <p class="lede">Available to relocate. Available to do my master’s thesis on the work I carry out with the team, and to keep working after the degree ends in June 2027.</p>
     <div class="c-grid">
       <div><p class="k">Email</p><p class="v" id="mail">m.medinalazcano@hotmail.com</p><button class="copy" type="button" id="copyMail">Copy email</button></div>
       <div><p class="k">Phone</p><p class="v">+34 620 187 205</p></div>
       <div><p class="k">LinkedIn</p><p class="v"><a href="https://www.linkedin.com/in/miguel-angel-medina-lazcano-13389b245/" target="_blank" rel="noopener">linkedin.com/in/miguel-angel-medina-lazcano</a></p></div>
       <div><p class="k">Based in</p><p class="v">Madrid, Spain</p></div>
     </div>
-    <p class="footer-note">Formula Student work by the ISC FS Racing Team, Universidad Pontificia Comillas. Where a project was a team effort, the role box says what was mine. Managing Composites work is shown without client geometry or data.</p>
   </div>
 </section>
 
